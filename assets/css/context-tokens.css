@@ -1,0 +1,78 @@
+/* ============================================================
+   CONTEXT LAYER — espelho 1:1 das variáveis Figma
+   context/color/{text,surface,icon,border} do arquivo
+   "DS Theme B1 - (NuxtUI v2)", mode "Dark" da coleção Colors.
+   NuxtUI v2 não modela essa camada nativamente (só primary/gray
+   como slots de tema) — por isso ela existe aqui como CSS custom
+   properties, pra qualquer componente customizado (prefixo L,
+   ex.: LComboBox) ou estilo bespoke consumir sem hardcode.
+   ============================================================ */
+
+:root {
+  /* ── Text ── */
+  --context-color-text-primary: #FFFFFF;
+  --context-color-text-secondary: #90A8C3;
+  --context-color-text-inverted: #0D1B2E;
+  --context-color-text-action: #E0ECFF;
+  --context-color-text-action-hover: #2CDCFF;
+  --context-color-text-focus: #00C5F3;
+  --context-color-text-disabled: #5E7CA4;
+  --context-color-text-success: #22C55E;
+  --context-color-text-warning: #EAB308;
+  --context-color-text-error: #EF4444;
+  --context-color-text-info: #A855F7;
+
+  /* ── Surface ── */
+  --context-color-surface-page: #0D1B2E;
+  --context-color-surface-secondary: #132036;
+  --context-color-surface-primary: #1A2B47;
+  --context-color-surface-action-hover: #243758;
+  --context-color-surface-inverted: #FFFFFF;
+  --context-color-surface-action: #00C5F3;
+  --context-color-surface-focus: #00C5F31A;
+  --context-color-surface-disabled: #27272A;
+  --context-color-surface-success: #DCFCE7;
+  --context-color-surface-warning: #FEF9C3;
+  --context-color-surface-error: #FEE2E2;
+  --context-color-surface-info: #F3E8FF;
+
+  /* ── Icon (mesmos valores de Text, categoria própria) ── */
+  --context-color-icon-primary: #FFFFFF;
+  --context-color-icon-secondary: #90A8C3;
+  --context-color-icon-inverted: #0D1B2E;
+  --context-color-icon-action: #E0ECFF;
+  --context-color-icon-hover: #2CDCFF;
+  --context-color-icon-focus: #00C5F3;
+  --context-color-icon-disabled: #5E7CA4;
+  --context-color-icon-success: #22C55E;
+  --context-color-icon-warning: #EAB308;
+  --context-color-icon-error: #EF4444;
+  --context-color-icon-info: #A855F7;
+
+  /* ── Border ── */
+  --context-color-border-primary: #FFFFFF14;
+  --context-color-border-secondary: #FFFFFF0A;
+  --context-color-border-hover: #FFFFFF24;
+  --context-color-border-action: #00C5F3;
+  --context-color-border-selected: #00C5F3;
+  --context-color-border-focus: #00C5F3;
+  --context-color-border-disabled: #FFFFFF0A;
+  --context-color-border-success: #22C55E;
+  --context-color-border-warning: #EAB308;
+  --context-color-border-error: #EF4444;
+  --context-color-border-info: #A855F7;
+}
+
+/* Mode "Casino" da coleção Colors no Figma — superfícies near-black.
+   Ativar aplicando a classe .theme-casino num ancestral (ex.: <body>). */
+.theme-casino {
+  --context-color-text-secondary: #868D9C;
+  --context-color-text-disabled: #535A69;
+  --context-color-surface-page: #070809;
+  --context-color-surface-secondary: #0D0F13;
+  --context-color-surface-primary: #13161D;
+  --context-color-surface-action-hover: #191D27;
+  --context-color-border-primary: #FFFFFF0F;
+  --context-color-border-secondary: #FFFFFF08;
+  --context-color-border-hover: #FFFFFF21;
+}
