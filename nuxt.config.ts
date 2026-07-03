@@ -11,6 +11,8 @@ export default defineNuxtConfig({
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'Nacional B1 — Style Guide',
+      // Não indexar em buscadores (site interno para validação do time).
+      meta: [{ name: 'robots', content: 'noindex, nofollow' }],
     },
   },
   // O breadcrumb aponta para /components (índice inexistente): redireciona para a home.
